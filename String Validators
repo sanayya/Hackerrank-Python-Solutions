@@ -1,0 +1,38 @@
+if __name__ == '__main__':
+    s = input()
+    c1=0
+    c2=0
+    c3=0
+    c4=0
+    c5=0
+    for i in s:
+        if i.isalnum()==True:
+            c1+=1
+        if i.isalpha()==True:
+            c2+=1
+        if i.isdigit()==True:
+            c3+=1
+        if i.islower()==True:
+            c4+=1
+        if i.isupper()==True:
+            c5+=1
+    if c1==0:
+        print(False)
+    else:
+        print(True)
+    if c2==0:
+        print(False)
+    else:
+        print(True)
+    if c3==0:
+        print(False)
+    else:
+        print(True)
+    if c4==0:
+        print(False)
+    else:
+        print(True)
+    if c5==0:
+        print(False)
+    else:
+        print(True)
