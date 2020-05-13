@@ -1,0 +1,15 @@
+new_list = []
+scores = set()
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        new_list.append([name,score])
+        scores.add(score)
+second_score = sorted(scores)[1]
+second_lowest_name = []
+for name, score in new_list:
+    if score==second_score:
+        second_lowest_name.append(name)
+for name in sorted(second_lowest_name):
+    print(name)
