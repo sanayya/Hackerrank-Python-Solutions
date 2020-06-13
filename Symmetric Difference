@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+M = input()
+m = input().split()
+N = input()
+n = input().split()
+new_m = list(map(int,m))
+set_m = set(new_m)
+new_n = list(map(int,n))
+set_n = set(new_n)
+union = set_m.union(set_n)
+intersection = set_m.intersection(set_n)
+union_copy = union.copy()
+intersection_copy = intersection.copy()
+for num1 in union:
+    for num2 in intersection:
+        if num1 == num2:
+            union_copy.remove(num1)
+for num in sorted(union_copy):    
+    print(num)
