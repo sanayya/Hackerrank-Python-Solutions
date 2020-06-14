@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+n_rno = set(map(int, input().split()))
+b = int(input())
+b_rno = set(map(int, input().split()))
+rollno = n_rno | set(b_rno)
+print(len(rollno))
