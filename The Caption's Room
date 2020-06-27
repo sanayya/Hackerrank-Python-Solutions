@@ -1,0 +1,8 @@
+from collections import Counter
+group_size = int(input())
+room_number_list = list(map(int,input().split()))
+room_number_list.sort()
+c = Counter(room_number_list)
+for num in c:
+    if c[num] == 1:
+     print(num)
