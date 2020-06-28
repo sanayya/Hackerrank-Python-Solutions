@@ -1,0 +1,10 @@
+A = set(map(int,input().split()))
+n = int(input())
+isStrictSuperset = True
+for i in range(n):
+    other_set = set(map(int,input().split()))
+    if not other_set.issubset(A):
+        isStrictSuperset = False
+    if len(other_set)>=len(A):
+        isStrictSuperset = False
+print(isStrictSuperset)
