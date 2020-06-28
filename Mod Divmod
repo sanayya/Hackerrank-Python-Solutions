@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input())
+mod = divmod(a,b)
+print(mod[0])
+print(mod[1])
+print(mod)
