@@ -1,0 +1,7 @@
+from itertools import combinations
+S = input().split()
+k=1
+while(k<=int(S[1])):
+    for i in combinations(sorted(S[0]),k):
+        print(''.join(i))
+    k+=1
