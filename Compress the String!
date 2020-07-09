@@ -1,0 +1,4 @@
+from itertools import groupby
+S = map(int,input())
+for i,j in groupby(S):
+    print(tuple([len(list(j)), i]) ,end = " ")
