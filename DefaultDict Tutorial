@@ -1,0 +1,15 @@
+from collections import defaultdict
+n,m = map(int,input().split())
+A = defaultdict(list)
+B = list()
+for i in range(n):
+    word = input()
+    A[word].append(i+1)
+for j in range(m):
+    B = B+[input()]
+    
+for word in B:
+    if word in A.keys():    
+        print(" ".join(map(str,A[word])))
+    else:
+        print(-1)
